@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val'Oro - Nosotros</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header-content {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+
+        .header-content h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #000000; /* Establecer color negro por defecto */
+            text-align: center;
+            font-family: 'Inconsolata', sans-serif; /* Fuente modificada */
+        }
+
+        .header-content p {
+            font-size: 2.0em;
+            color: #000000; /* Establecer color negro por defecto */
+            text-align: center;
+            font-family: 'Inconsolata', sans-serif;
+        }
+
+        /* Estilos para el menú hamburguesa (puedes ajustarlos en tu archivo styles.css) */
+        .hamburger {
+            display: none; /* Ocultar por defecto en pantallas grandes */
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5em; /* Ajusta el tamaño del icono */
+            padding: 10px;
+        }
+
+        .hamburger i {
+            color: #ffffff; /* Color del icono */
+        }
+
+        .main-nav.open .main-menu {
+            display: flex; /* Mostrar el menú cuando la clase 'open' está activa */
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #f8f8f8; /* Color de fondo del menú desplegable */
+            position: absolute;
+            top: 60px; /* Ajusta según la altura de tu header */
+            left: 0;
+            z-index: 10; /* Asegurar que esté por encima de otros elementos */
+            padding: 10px 0;
+        }
+
+        .main-nav.open .main-menu li {
+            margin: 10px 0;
+        }
+
+        /* Media query para mostrar el botón de hamburguesa y ocultar el menú en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block; /* Mostrar el botón en pantallas pequeñas */
+            }
+            .main-nav .main-menu {
+                display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+            }
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <header>
+        <a href="Index.html" class="logo-link">
+            <img src="LogoValOro.png" alt="Logo Val'Oro" id="logo">
+        </a>
+        <nav class="main-nav">
+            <ul class="main-menu">
+                <li class="menu-item"><a href="Index.html" class="menu-btn" id="inicio-btn">Inicio</a></li>
+                <li class="menu-item"><a href="Catalogo.html" class="menu-btn" id="catalogo-btn">Catálogo</a></li>
+                <li class="menu-item"><a href="Contactanos.html" class="menu-btn" id="contactanos-btn">Contáctanos</a></li>
+                <li class="menu-item"><a href="Nosotros.html" class="menu-btn" id="nosotros-btn">Nosotros</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="intro-text">
+        <div class="header-content">
+            <h1>Nuestros Pilares</h1>
+            <p>La esencia de lo que somos y el compromiso que tenemos con la calidad, la innovación y la satisfacción del cliente.</p>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <div class="container">
+            <div class="card">
+                <img src="https://grupoioe.es/wp-content/uploads/2019/01/110.Definir-la-mision-y-vision-de-una-empresa.jpg" alt="Misión">
+                <div class="intro">
+                    <h1>Misión</h1>
+                    <p>Nuestra <span>Misión</span> es...</p>
+                    <p>Somos una empresa 100% hidalguense dedicada a la fabricación de joyería fina para atender las necesidades de nuestros clientes, entregando calidad y un excelente precio.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.veropreviale.com/wp-content/uploads/2023/02/mision-vision-y-valores.svg" alt="Visión">
+                <div class="intro">
+                    <h1>Visión</h1>
+                    <p>Nuestra <span>Visión</span> es...</p>
+                    <p>Ser una empresa líder, contando con un servicio de vanguardia que supere la expectativa de nuestra demanda, permitiendo la permanencia y conquista de nuevos mercados a nivel estatal y nacional.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-pensamiento-critico_114360-8082.jpg" alt="Filosofía">
+                <div class="intro">
+                    <h1>Filosofía</h1>
+                    <p>Nuestra <span>Filosofía</span> es...</p>
+                    <p>Crear joyería fina con excelencia, calidad e innovación, reflejando el espíritu hidalguense, superando expectativas y conquistando mercados con un servicio accesible y confiable.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hecho por Graduaciones Val'Oro, empresa 100% Hidalguense.</p>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const mainNav = document.querySelector('.main-nav');
+
+            hamburger.addEventListener('click', () => {
+                mainNav.classList.toggle('open');
+                hamburger.classList.toggle('open');
+            });
+        </script>
+        <script src="script.js"></script>
+        <script src="main.js"></script>
+    </footer>
+</body>
+</html>

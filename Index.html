@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val'Oro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilo para los títulos y subtítulos */
+        .photo-gallery .title-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto 30px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #dcdcdc;
+        }
+
+        .photo-gallery .title-container h2 {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .photo-gallery .title-container h4 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #666;
+            font-style: italic;
+            margin-top: 0;
+        }
+
+        /* Estilos para el título sobre el texto descriptivo */
+        .photo-item .Estilo-Caja {
+            position: relative;
+        }
+
+        .photo-item .Estilo-Caja h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        body.darkmode .photo-item .Estilo-Caja h2 {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+        .photo-item .item-description {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="Index.html">
+            <img src="LogoValOro.png" alt="Logo Val'Oro" id="logo">
+        </a>
+        <label for="menu_hamburguesa" class="hamburger">
+            <i class="fa-solid fa-bars list_icon"></i>
+        </label>
+        <input type="checkbox" id="menu_hamburguesa">
+        <nav>
+            <ul class="main-menu">
+                <li class="select-menu menu-item">
+                    <ul class="list">
+                        <li class="option" style="--i:3;">
+                            <a href="Catalogo.html">
+                                <ion-icon name="diamond-outline" class="icon"></ion-icon>
+                                <span class="option-text">Joyas</span>
+                            </a>
+                        </li>
+                        <li class="option" style="--i:1;">
+                            <a href="Catalogo.html">
+                                <ion-icon name="bag-handle-outline" class="icon"></ion-icon>
+                                <span class="option-text">Catalogo</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="Index.html" class="menu-btn" id="inicio-btn">Inicio</a></li>
+                <li class="menu-item"><a href="Catalogo.html" class="menu-btn" id="catalog-btn">Catálogo</a></li>
+                <li class="menu-item"><a href="Contactanos.html" class="menu-btn" id="contactanos-btn">Contáctanos</a></li>
+                <li class="menu-item"><a href="Nosotros.html" class="menu-btn" id="nosotros-btn">Nosotros</a></li>
+                <li class="menu-item">
+                    <div class="btn">
+                        <div class="btn__indicator">
+                            <div class="btn__icon-container">
+                                <i class="btn__icon fa-solid"></i>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro-text">
+        <h2>En Joyería y graduaciones<br>Val'Oro<br>Encontrarás:</h2>
+    </section>
+
+    <div class="container">
+        <div class="slide bg-image image-1" style="background-image: url('AnilloCuadro.png');">
+            <h3>Cuadros</h3>
+        </div>
+        <div class="slide bg-image image-1" style="background-image: url('AnilloSliders.png');">
+            <h3>Anillos</h3>
+        </div>
+        <div class="slide bg-image image-1" style="background-image: url('EsclavaCuadro.png');">
+            <h3>Esclavas</h3>
+        </div>
+        <div class="slide bg-image image-1" style="background-image: url('CollarSliders.png');">
+            <h3>Collares</h3>
+        </div>
+        <div class="slide bg-image image-1" style="background-image: url('ConjuntoSlider.png');">
+            <h3>Juego de Dije con Arete</h3>
+        </div>
+    </div>
+
+    <section class="photo-gallery">
+        <div class="title-container">
+            <h2>Momentos que marcan la vida</h2>
+            <h4>Una galería de recuerdos inolvidables para toda ocasión.</h4>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="1.Sentados.JPG" alt="Descripción 1">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">Memorias de un Gran Paso</h2>
+                <p class="item-description">
+                    En cada graduado, vemos el reflejo de un futuro lleno de promesas. Sus togas y estolas, símbolos
+                    de su dedicación, cuentan la historia de un esfuerzo que Val'Oro celebra con admiración.
+                    Cada uno de ellos, con su mirada llena de esperanza, representa el espíritu de superación que nos inspira a
+                    crear joyas que perduren en el tiempo, marcando momentos inolvidables. En Val'Oro, nos enorgullece ser parte de
+                    estos instantes de logro, donde el talento y la pasión se unen para dar forma a un mañana brillante.
+                </p>
+            </div>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="2.Titulo.JPG" alt="Descripción 2">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">Consagración de un Sueño: El Momento de Recibir el Título</h2>
+                <p class="item-description">
+                    En el clímax de una ceremonia de graduación, un estudiante ataviado con toga y birrete negros,
+                    realzados por una estola roja, recibe su título con una sonrisa radiante. El momento, capturado
+                    en primer plano, destaca la alegría del logro. A su lado, un hombre de camisa negra formal le entrega
+                    el diploma, compartiendo la emoción del estudiante. El fondo del salón de eventos, con mesas y sillas
+                    decoradas, añade un ambiente festivo a la escena. La imagen transmite la culminación de años de esfuerzo y
+                    el inicio de un nuevo capítulo en la vida del graduado.
+                </p>
+            </div>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="3.Gorritp.JPG" alt="Descripción 3">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">¡La Celebración del Éxito!: El Lanzamiento de Nuevos Horizontes</h2>
+                <p class="item-description">
+                    Un grupo de graduados celebra con entusiasmo el final de sus estudios, lanzando sus birretes al aire en
+                    un gesto de logro y transición hacia un nuevo capítulo. Vestidos con togas negras y estolas rojas,
+                    los estudiantes muestran alegría y camaradería mientras familiares y amigos comparten la emoción en el salón
+                    decorado festivamente. Este momento encapsula la euforia, el éxito colectivo y la promesa de nuevas oportunidades,
+                    simbolizados en el lanzamiento liberador de los birretes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="photo-gallery">
+        <div class="title-container">
+            <h2>Un regalo que perdura</h2>
+            <h4>Con un amor que captura</h4>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_651150-MLM69637256575_052023-O.webp" alt="Regalo Descripción 1">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">Gracia Grabada: La Elegancia Personalizada</h2>
+                <p class="item-description">
+                    Imagina llevar contigo un emblema personal, un testimonio silencioso de tu ser único. Esta esclava, delicadamente personalizada con tu inicial o el eco de tu nombre, va más allá de la belleza superficial; se convierte en un vínculo tangible con tu propia identidad y una expresión sutil pero poderosa de tu estilo individual. Que cada destello de su metal te recuerde no solo lo especial que eres a tus propios ojos, sino también la profunda conexión emocional y el impacto positivo que irradias hacia el mundo que te rodea. Considera esta joya como un faro personal, iluminando tu singularidad y recordándote constantemente la valiosa diferencia que marcas en las vidas de quienes te aprecian y se inspiran en tu presencia.
+                </p>
+            </div>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_912092-MLM26362601186_112017-O.webp" alt="Regalo Descripción 2">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">El Símbolo de un Legado de Éxito</h2>
+                <p class="item-description">
+                    Más que una joya, este anillo de plata es un emblema tangible de la culminación de tus esfuerzos y la cristalización de tus más preciados sueños. Cada curva y cada brillo de su metal elegante encapsulan la tenacidad de tu dedicación, la perseverancia ante los desafíos y cada paso significativo que has dado para llegar a este punto trascendental. Que al deslizarlo en tu dedo, sientas el peso simbólico de tus logros pasados y la poderosa inspiración para abrazar el futuro brillante que se despliega ante ti. Que este anillo sea un recordatorio constante de tu capacidad para alcanzar la grandeza y un faro que te guíe con confianza hacia las nuevas metas que anhelas conquistar.
+                </p>
+            </div>
+        </div>
+        <div class="photo-item">
+            <div class="photo-container">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_754556-MLM42338838124_062020-O.webp" alt="Regalo Descripción 3">
+            </div>
+            <div class="Estilo-Caja">
+                <h2 class="photo-title">Tiempo de Logros: Un Reloj para la Eternidad</h2>
+                <p class="item-description">
+                    Más que un simple instrumento para medir el tiempo, este elegante y duradero reloj de plata se convierte en un testimonio tangible de tu trayectoria personal y la solidez de tus logros. Grabado especialmente para ti, encierra simbólicamente cada segundo de esfuerzo invertido, cada acto de dedicación silenciosa y cada sueño que has logrado materializar a lo largo de tu camino. Que cada vez que su peso se sienta en tu muñeca y observes el movimiento constante de sus manecillas, recuerdes que el tiempo no es un mero transcurrir, sino un aliado invaluable que te impulsa hacia la consecución de nuevas metas y la vivencia de momentos que atesorarás por siempre. Que este reloj sea un recordatorio constante de tu capacidad para transformar el tiempo en progreso y tus aspiraciones en realidades palpables.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h3>Encuéntranos en:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.867924854669!2d-99.34216149999999!3d20.055974100000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d22d007980d933%3A0x930ccc7c2ef68d69!2sJoyeria%20y%20graduaciones%20Val'Oro!5e0!3m2!1ses!2smx!4v1738950753168!5m2!1ses!2smx"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dirección</h3>
+                <p>Plaza de la Constitución no. 10-int 1</p>
+                <p>Centro, 43200</p>
+                <p>Tula de Allende Hgo.</p>
+                <p>Sucursal: Calle Morelos no. 107C</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contáctanos</h3>
+                <p>Teléfono: (773) 110 80 60
+                    <ion-icon name="call-outline"></ion-icon>
+                </p>
+                <p>Teléfono: 773 149 88 55
+                    <ion-icon name="call-outline"></ion-icon>
+                </p>
+                <p>Correo: graduacionesvaloro@hotmail.com
+                    <ion-icon name="mail-outline"></ion-icon>
+                </p>
+            </div>
+        </div>
+        <p>© 2025 Hecho por Graduaciones Val'Oro, empresa 100% Hidalguense.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

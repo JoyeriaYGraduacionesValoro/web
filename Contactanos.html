@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilos para centrar los iconos debajo del texto */
+        .contact-info {
+            display: flex;
+            flex-direction: column; /* Coloca los elementos hijos uno debajo del otro */
+            align-items: center; /* Centra los elementos hijos horizontalmente */
+            text-align: center; /* Centra el texto dentro del párrafo */
+        }
+
+        .social-icons {
+            margin-top: 10px; /* Agrega un espacio entre el texto y los iconos */
+            display: flex;
+            justify-content: center; /* Centra los iconos horizontalmente dentro de su contenedor */
+        }
+
+        .social-icons a {
+            margin-right: 10px; /* Agrega espacio entre los iconos */
+            font-size: 1.5em; /* Ajusta el tamaño de los iconos */
+        }
+
+        /* Estilos para el menú hamburguesa */
+        .main-nav {
+            display: flex;
+            justify-content: space-between; /* Espacia el logo y el menú */
+            align-items: center;
+            padding: 10px 20px; /* Añade un poco de espacio alrededor */
+        }
+
+        .main-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Muestra los elementos del menú en línea */
+        }
+
+        .menu-item {
+            margin-left: 20px; /* Espacio entre los elementos del menú */
+        }
+
+        .menu-btn {
+            text-decoration: none;
+            color: #000; /* Color del texto del menú */
+            font-weight: bold;
+        }
+
+        .hamburger {
+            display: none; /* Ocultar por defecto en pantallas grandes */
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5em; /* Ajusta el tamaño del icono */
+            padding: 10px;
+            color: #ffffff; /* Color del icono del menú hamburguesa */
+        }
+
+        .hamburger i {
+            color: inherit; /* Hereda el color del botón */
+        }
+
+        .main-nav.open .main-menu {
+            display: flex; /* Mostrar el menú cuando la clase 'open' está activa */
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: #f8f8f8; /* Color de fondo del menú desplegable */
+            position: absolute;
+            top: 60px; /* Ajusta según la altura de tu header */
+            left: 0;
+            z-index: 10; /* Asegurar que esté por encima de otros elementos */
+            padding: 10px 0;
+        }
+
+        .main-nav.open .main-menu li {
+            margin: 10px 0;
+        }
+
+        /* Media query para mostrar el botón de hamburguesa y ocultar el menú en pantallas pequeñas */
+        @media (max-width: 768px) {
+            .main-nav .main-menu {
+                display: none; /* Ocultar el menú por defecto en pantallas pequeñas */
+            }
+            .hamburger {
+                display: block; /* Mostrar el botón en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="Index.html" class="logo-link">
+                <img src="LogoValOro.png" alt="Logo Val'Oro" id="logo">
+            </a>
+            <ul class="main-menu">
+                <li class="menu-item"><a href="Index.html" class="menu-btn" id="inicio-btn">Inicio</a></li>
+                <li class="menu-item"><a href="Catalogo.html" class="menu-btn" id="catalogo-btn">Catálogo</a></li>
+                <li class="menu-item"><a href="Contactanos.html" class="menu-btn" id="contactanos-btn">Contáctanos</a></li>
+                <li class="menu-item"><a href="Nosotros.html" class="menu-btn" id="nosotros-btn">Nosotros</a></li>
+            </ul>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-section">
+            <h2>¡Contáctanos!</h2>
+            <p>Pregunta por tu paquete ideal.</p>
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <p>Llámanos al: <a href="tel:1234567890">+52 773 110 8060</a></p>
+                </div>
+                <div class="contact-info">
+                    <p>Envíanos un correo a: <a href="mailto:info@valoro.com">joyeriavaloro@gmail.com</a></p>
+                </div>
+                <div class="contact-info">
+                    <p>
+                        <strong>Dirección:</strong><br>
+                        Plaza de la Constitución no. 10-int 1<br>
+                        Centro, 43200<br>
+                        Tula de Allende Hgo.<br><br>
+                        <strong>Sucursal:</strong><br>
+                        Calle Morelos no. 107C
+                    </p>
+                </div>
+            </div>
+            <div class="slogan">
+                <p><br><strong>En Joyería y Graduaciones Val'Oro, <br>
+                    Encontrarás una Idea Brillante.</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Hecho por Graduaciones Val'Oro, empresa 100% Hidalguense.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mainNav = document.querySelector('.main-nav');
+
+        hamburger.addEventListener('click', () => {
+            mainNav.classList.toggle('open');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
